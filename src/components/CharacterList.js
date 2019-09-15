@@ -30,6 +30,7 @@ export default function CharacterList() {
             name={character.name}
             status={character.status}
             species={character.species}
+            episode={character.episode}
           />
         );
       })}
