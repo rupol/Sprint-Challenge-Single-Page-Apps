@@ -42,3 +42,7 @@ main {
 header h1 {
   text-align: center;
 }
+
+.home-header h1 {
+  margin: 35px;
+}
