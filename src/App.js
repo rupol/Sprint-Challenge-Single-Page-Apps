@@ -1,4 +1,6 @@
 import React from "react";
+import { Route } from "react-router-dom";
+
 import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 
@@ -10,10 +12,10 @@ export default function App() {
   return (
     <main>
       <Header />
-      {/* <TabNav /> */}
-      {/* <CharacterList /> */}
-      {/* <LocationsList /> */}
-      <EpisodesList />
+      <TabNav />
+      <Route path="/character" component={CharacterList} />
+      <Route path="/location" component={LocationsList} />
+      <Route path="/episode" component={EpisodesList} />
     </main>
   );
 }

@@ -3,11 +3,11 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
-  // TODO: Add useState to track data from useEffect
+  // Add useState to track data from useEffect
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // TODO: Add API Request here - must run in `useEffect`
+    //  Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     axios
       .get(`https://rickandmortyapi.com/api/character/`)
@@ -30,6 +30,8 @@ export default function CharacterList() {
             name={character.name}
             status={character.status}
             species={character.species}
+            location={character.location.name}
+            origin={character.origin.name}
             episode={character.episode}
           />
         );

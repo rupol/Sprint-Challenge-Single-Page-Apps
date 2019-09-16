@@ -12,6 +12,11 @@ export default function CharacterCard(props) {
       </Card.Content>
 
       <Card.Content>
+        <Card.Description>Location: {props.location}</Card.Description>
+        <Card.Description>Origin: {props.origin}</Card.Description>
+      </Card.Content>
+
+      <Card.Content>
         <Icon name="user" />
         {props.episode.length} Episodes
       </Card.Content>
